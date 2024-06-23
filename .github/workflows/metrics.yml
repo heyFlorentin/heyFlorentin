@@ -46,3 +46,4 @@ jobs:
           plugin_lines_repositories_limit: 4
           plugin_lines_sections: base
           repositories_forks: yes
+          filename: heyFlorentin-metrics.svg
