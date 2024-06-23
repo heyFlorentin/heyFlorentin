@@ -30,32 +30,14 @@ jobs:
           base: header, activity
           config_display: large
           config_timezone: Europe/Berlin
-          plugin_activity: yes
-          plugin_activity_days: 14
-          plugin_activity_filter: all
-          plugin_activity_limit: 5
-          plugin_activity_load: 100
-          plugin_activity_visibility: all
-          plugin_habits: yes
-          plugin_habits_charts_type: classic
-          plugin_habits_facts: yes
-          plugin_habits_from: 200
-          plugin_habits_languages_threshold: 0%
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           plugin_languages: yes
-          plugin_languages_analysis_timeout: 60
           plugin_languages_categories: markup, programming
           plugin_languages_details: bytes-size
           plugin_languages_indepth: yes
           plugin_languages_limit: 8
-          plugin_languages_other: yes
           plugin_languages_recent_categories: markup, programming
           plugin_languages_recent_load: 500
           plugin_languages_sections: most-used
-          plugin_languages_threshold: 0%
-          plugin_topics: yes
-          plugin_topics_limit: 10
-          plugin_topics_mode: mastered
-          plugin_topics_sort: activity
           filename: heyFlorentin.svg
