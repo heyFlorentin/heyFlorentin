@@ -5,7 +5,7 @@ on:
   schedule: [{ cron: "0 * * * *" }]
   # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
-  push: { branches: ["master", "main"] }
+  push: { branches: ["main"] }
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
@@ -27,17 +27,32 @@ jobs:
           # Options
           user: heyFlorentin
           template: classic
-          base: header, activity
-          config_display: large
+          base: header, activity, community, repositories, metadata
           config_timezone: Europe/Berlin
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+          plugin_code: yes
+          plugin_code_days: 3
+          plugin_code_lines: 12
+          plugin_code_load: 400
+          plugin_code_visibility: public
+          plugin_habits: yes
+          plugin_habits_charts_type: classic
+          plugin_habits_days: 1400
+          plugin_habits_facts: yes
+          plugin_habits_from: 20000
+          plugin_habits_languages_limit: 8
+          plugin_habits_languages_threshold: 0%
           plugin_languages: yes
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_analysis_timeout_repositories: 7.5
           plugin_languages_categories: markup, programming
-          plugin_languages_details: bytes-size
-          plugin_languages_indepth: yes
+          plugin_languages_colors: github
           plugin_languages_limit: 8
           plugin_languages_recent_categories: markup, programming
-          plugin_languages_recent_load: 500
+          plugin_languages_recent_days: 14
+          plugin_languages_recent_load: 300
           plugin_languages_sections: most-used
-          filename: heyFlorentin.svg
+          plugin_languages_threshold: 0%
+          plugin_lines: yes
+          plugin_lines_history_limit: 10
+          plugin_lines_repositories_limit: 8
+          plugin_lines_sections: base
